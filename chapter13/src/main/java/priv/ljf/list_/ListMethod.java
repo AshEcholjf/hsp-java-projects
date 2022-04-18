@@ -25,6 +25,9 @@ public class ListMethod {
         Object o = list.get(5);//List的get方法只有这一个，没有实现其它的重载,也会存在重载的时候
         System.out.println(o);
 
+        //Object set(int index, Object o)修改index处的元素,返回修改后的元素
+        Object w = list.set(0, "老大");
+        System.out.println(w);
         //lastIndexOf(Object o)返回元素最后一次出现的索引
         int i = list.lastIndexOf("我是老六");
         System.out.println(i);
