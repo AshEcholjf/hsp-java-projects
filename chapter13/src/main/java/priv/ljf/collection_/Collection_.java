@@ -16,7 +16,7 @@ public class Collection_ {
 //        Collection
 //        Map
         //举例：
-        ArrayList arrayList = new ArrayList();
+        Collection arrayList = new ArrayList();
         arrayList.add("单");
         arrayList.add("列");
         Map map = new HashMap();
