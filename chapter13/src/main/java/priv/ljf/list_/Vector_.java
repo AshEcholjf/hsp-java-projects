@@ -5,6 +5,7 @@ import java.util.Vector;
 public class Vector_ {
     public static void main(String[] args) {
         Vector<Object> vector = new Vector<>();
+        Vector<Object> objects = new Vector<>(8);
 
         for (int i = 0; i < 10; i++) {
             vector.add(i);
@@ -15,6 +16,14 @@ public class Vector_ {
         /**
          * 源码分析
          * 1.无参构造器 Vector<Object> vector = new Vector<>();
+         * 补充：如果是带参构造器        Vector<Object> objects = new Vector<>(8);
+         *              直接调用自身的构造器创建指定大小的集合
+         *                  public Vector(int initialCapacity) {
+         *                          this(initialCapacity, 0);
+         *                      }
+         *
+         *
+         *
          *      内部调用参数为10的带参构造器，创建大写为10的vector集合
          *      public Vector() {
          *         this(10);
