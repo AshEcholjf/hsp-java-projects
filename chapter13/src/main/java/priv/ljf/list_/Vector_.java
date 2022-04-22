@@ -13,6 +13,7 @@ public class Vector_ {
         vector.add(11);
         System.out.println(vector);
 
+
         /**
          * 源码分析
          * 1.无参构造器 Vector<Object> vector = new Vector<>();
