@@ -1,5 +1,6 @@
 package priv.ljf.list_;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 
 //LinkedList源码解读
@@ -108,5 +109,25 @@ public class LinkedListCrud {
          *     返回删除的元素
          *
          */
+
+
+        //LinkedList的遍历
+        //1.增强for
+        for (Object o : linkedList) {
+            System.out.println(o);
+        }
+        System.out.println("--------");
+        //2.迭代器
+        Iterator iterator = linkedList.iterator();
+        //获取链表对应的迭代器对象
+        while (iterator.hasNext()){//判断当前的游标是否指向有效元素
+            Object next = iterator.next();//获取当前的游标指向的元素，并且下移
+            System.out.println(next);
+        }
+        //3.普通for循环
+        for (int i = 0; i < linkedList.size(); i++) {
+            System.out.println(linkedList.get(i));
+        }
+
     }
 }
