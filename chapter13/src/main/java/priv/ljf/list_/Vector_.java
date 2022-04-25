@@ -17,6 +17,7 @@ public class Vector_ {
         /**
          * 源码分析
          * 1.无参构造器 Vector<Object> vector = new Vector<>();
+         *
          * 补充：如果是带参构造器        Vector<Object> objects = new Vector<>(8);
          *              直接调用自身的构造器创建指定大小的集合
          *                  public Vector(int initialCapacity) {
